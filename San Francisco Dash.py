@@ -63,7 +63,7 @@ app.layout=html.Div([
         #Map
         html.Div([
             dcc.Graph(id='graph', config={'displayModeBar': False, 'scrollZoom': True},
-                      style={'padding-bottom':'2px','padding-left':'2px','height':'100vh'} 
+                      style={'padding-bottom':'2px','padding-left':'2px','height':'80vh'} 
                 )
             ]),
         
@@ -108,7 +108,7 @@ def update_figure(chosen_cat,chosen_dist):
                     lat=37.7745986,
                     lon=-122.4258917
                 ),
-                pitch=30,
+                pitch=40,
                 zoom=11
             ),
         )
